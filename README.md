@@ -1,4 +1,15 @@
-social-media-buttons
+Social Media Buttons
 ====================
 
-A simple LESS file to produce styles for social media buttons integrating with the "brand" icons of Font Awesome. Should be used in conjunction with tag styles of website.
+Built for use in conjunction with Bootstrap and FontAwesome, this project will produce wonderful site-specific colored styles for social media icons. There are three different mixins developed under this project.
+
+1. Default (none)
+2. Square
+3. Circle
+
+Default styles will be applied when used as follows
+<code><a href="fa fa-facebook"></a></code>
+Square styles will be applied when used as follows
+<code><a href="fa fa-facebook square"></a></code>
+Circle styles will be applied when used as follows
+<code><a href="fa fa-facebook circle"></a></code>
