@@ -8,8 +8,14 @@ Built for use in conjunction with Bootstrap and FontAwesome, this project will p
 3. Circle
 
 Default styles will be applied when used as follows
+
   a href="fa fa-facebook"
+  
 Square styles will be applied when used as follows
+
   a href="fa fa-facebook square"
+  
 Circle styles will be applied when used as follows
+
   a href="fa fa-facebook circle"
+  
