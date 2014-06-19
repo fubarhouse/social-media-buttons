@@ -1,0 +1,211 @@
+@import "bootstrap-variables";
+@import "bootstrap-mixins";
+
+$fontawesome: 1;
+
+@mixin fa-social($socialBackground) {
+        padding: 5px;
+        color: auto !important;
+        background-color: transparent !important;
+        &:hover {
+                color: white !important;
+                background-color: $socialBackground !important;
+                text-decoration: none !important;
+        }
+        &.circle {
+            &:hover {
+                border-radius: 50% !important;
+            }
+        }
+}
+
+@if $fontawesome == 1 {
+  @import "http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
+  
+  ul.fa.social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    li {
+      margin: 0;
+      display: inline;
+    }
+  }
+  
+  $social-500px			:	#444444;
+  $social-aboutme		:	#00405D;
+  $social-adn			:	#4c8c16;
+  $social-aim			:	#F2D523;
+  $social-allistapart		:	#222222;
+  $social-amazon		:	#FF9900;
+  $social-amazonwishlist	:	#FF9900;
+  $social-android		:	#A4C639;
+  $social-angellist		:	#000000;
+  $social-appdotnet		:	#898D90;
+  $social-apple			:	#B9BFC1;
+  $social-audioboo		:	#AE006E;
+  $social-aws			:	#FF9900;
+  $social-basecamp		:	#66AD4E;
+  $social-bebo			:	#EE1010;
+  $social-behance		:	#1769FF;
+  $social-bitbucket		:	#205081;
+  $social-bitcoin		:	#F7931A;
+  $social-blip			:	#DD1919;
+  $social-blogger		:	#FF8833;
+  $social-bootstrap		:	#0088CC;
+  $social-codeacademy		:	#0088CC;
+  $social-codepen		:	#000000;
+  $social-coderbits		:	#F16522;
+  $social-coderwall		:	#3E8DCC;
+  $social-codeschool		:	#C68044;
+  $social-conservatives		:	#0087DC;
+  $social-coursera		:	#3A6D8E;
+  $social-css3			:	#0092Bf;
+  $social-delicious		:	#3274D1;
+  $social-designer-news		:	#1C52A2;
+  $social-deviantart 		: 	#4B5D50;
+  $social-digg			:	#14589E;
+  $social-disqus		:	#2E9FFF;
+  $social-dribbble		:	#EA4C89;
+  $social-dropbox		:	#007EE5;
+  $social-drupal		:	#0077C0;
+  $social-ebay			:	#0064D2;
+  $social-envato		:	#528036;
+  $social-evernote		:	#6BB130;
+  $social-eventbrite		:	#F3844C;
+  $social-eventstore		:	#6BA300;
+  $social-exfm			:	#0097F8;
+  $social-facebook		: 	#3b5998;
+  $social-flattr		:	#F67C1A;
+  $social-flickr		: 	#ff0084;
+  $social-formspring		:	#0076C0;
+  $social-forrst		:	#5B9A68;
+  $social-foursquare	 	: 	#0072b1;
+  $social-github		:	#bbb;
+  $social-gittip		:	#663300;
+  $social-geeklist		:	#8CC63E;
+  $social-gmail			:	#DD4B39;
+  $social-goodreads		:	#5A471B;
+  $social-google		:	#245DC1;
+  $social-googleplus		: 	#dd4b39;
+  $social-govuk			:	#231F20;
+  $social-grooveshark		:	#000000;
+  $social-hackernews		:	#FF6600;
+  $social-gravatar		:	#1E8CBE;
+  $social-heroku		:	#6762A6;
+  $social-html5			:	#F06529;
+  $social-instagram		: 	#517fa4;
+  $social-imdb			:	#F3CE00;
+  $social-khanacademy		:	#9DB63B;
+  $social-kickstarter		:	#87C442;
+  $social-kik			:	#87C541;
+  $social-klout			:	#E24A25;
+  $social-labour		:	#C41230;
+  $social-laravel		:	#FB502B;
+  $social-lastfm		:	#D51007;
+  $social-layervault		:	#26AE90;
+  $social-letterboxd		:	#2C3641;
+  $social-liberaldemocrats	:	#F7B135;
+  $social-linkedin		: 	#007bb6;
+  $social-livejournal		:	#195397;
+  $social-jquery		:	#0867AB;
+  $social-jqueryui		:	#FEA620;
+  $social-jsdb			:	#DA320B;
+  $social-jsfiddle		:	#4679A4;
+  $social-justgiving		:	#78256D;
+  $social-maxcdn		:	#FF881E;
+  $social-mediatemple		:	#000000;
+  $social-menedeley		:	#B61F2F;
+  $social-microformats		:	#8CC319;
+  $social-modernizr		:	#D81A76;
+  $social-myspace		:	#008DDE;
+  $social-mysql			:	#007597;
+  $social-nationalrail		:	#003366;
+  $social-orkut			:	#ED2590;
+  $social-outlook		:	#0072C6;
+  $social-newsvine		:	#075B2F;
+  $social-office		:	#EB3C00;
+  $social-path			:	#E41F11;
+  $social-php			:	#6181B6;
+  $social-picasa		:	#4B5D5F;
+  $social-pinboard		:	#0000FF;
+  $social-pingup		:	#00B1AB;
+  $social-pinterest		: 	#cb2027;
+  $social-pocket		:	#EF4056;
+  $social-protoio		:	#40C8F4;
+  $social-quora			: 	#a82400;
+  $social-rails			:	#A62C39;
+  $social-readmill		:	#052336;
+  $social-rdio			:	#006ED2;
+  $social-readability	        :	#870000;
+  $social-reddit		:	#CEE3F8;
+  $social-rss			:	#fa9b39;
+  $social-skydrive		:	#094AB1;
+  $social-skype			:	#00B0F6;
+  $social-sinaweibo		:	#E6162D;
+  $social-slideshare		:	#009999;
+  $social-smashingmagazine	:	#E95C33;
+  $social-soundcloud		:	#FF6600;
+  $social-spotify		:	#80B719;
+  $social-squarespace		:	#000000;
+  $social-stackexchange		:	#1F5196;
+  $social-stackoverflow		:	#F47920;
+  $social-steam			:	#000000;
+  $social-stumbleupon		:	#EB4924;
+  $social-superuser		:	#2DABE2;
+  $social-ted			:	#FF2B06;
+  $social-trakt			:	#222222;
+  $social-treehouse		:	#7FA24C;
+  $social-tripadvisor		:	#589442;
+  $social-tumblr		: 	#32506d;
+  $social-twitch		:	#6441A5;
+  $social-twitchtv		: 	#6441a5;
+  $social-twitter		: 	#00aced;
+  $social-typo3			:	#FF8700;
+  $social-viadeo		:	#F4982B;
+  $social-vimeo-blue		:	#44bbff;
+  $social-vimeo-green		: 	#aad450;
+  $social-visualstudio		:	#68217A;
+  $social-vine			:	#00A47A;
+  $social-vk			: 	#45668e;
+  $social-w3c			:	#0066B0;
+  $social-whatsapp		:	#64D448;
+  $social-wikipedia		:	#000000;
+  $social-windows		:	#00BDF6;
+  $social-wordpress		:	#21759B;
+  $social-xbox			:	#107C10;
+  $social-xing			:	#006567;
+  $social-yahoo			: 	#731A8B;
+  $social-yelp			:	#C93C27;
+  $social-youtube		: 	#bb0000;
+  $social-zerply		:	#9DBC7A;
+
+// Implementation
+// Add font awesome icon classes to a tags!
+
+    $socialBackground: #fff;
+    
+    a.social.fa-adn                  { @include fa-social($social-adn); }
+    a.social.fa-bitbucket            { @include fa-social($social-bitbucket); }
+    a.social.fa-bitcoin              { @include fa-social($social-bitcoin); }
+    a.social.fa-dropbox              { @include fa-social($social-dropbox); }
+    a.social.fa-drupal               { @include fa-social($social-drupal); }
+    a.social.fa-facebook             { @include fa-social($social-facebook); }
+    a.social.fa-flickr               { @include fa-social($social-flickr); }
+    a.social.fa-foursquare           { @include fa-social($social-foursquare); }
+    a.social.fa-github               { @include fa-social($social-github); }
+    a.social.fa-gittip               { @include fa-social($social-gittip); }
+    a.social.fa-google-plus          { @include fa-social($social-google); }
+    a.social.fa-instagram            { @include fa-social($social-instagram); }
+    a.social.fa-linkedin             { @include fa-social($social-linkedin); }
+    a.social.fa-maxcdn               { @include fa-social($social-maxcdn); }
+    a.social.fa-pinterest            { @include fa-social($social-pinterest); }
+    a.social.fa-rss                  { @include fa-social($social-rss); }
+    a.social.fa-skype                { @include fa-social($social-skype); }
+    a.social.fa-tumblr               { @include fa-social($social-tumblr); }
+    a.social.fa-twitter              { @include fa-social($social-twitter); }
+    a.social.fa-vimeo-square         { @include fa-social($social-vimeo-blue); }
+    a.social.fa-vk                   { @include fa-social($social-vk); }
+    a.social.fa-youtube              { @include fa-social($social-youtube); }
+}
